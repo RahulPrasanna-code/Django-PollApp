@@ -1,0 +1,51 @@
+main{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.resultheader{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;    
+    margin-bottom: 15px;
+}
+
+.pollresults{
+    border-bottom: 1px solid black;
+    color: black;
+    padding: 10px 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(233, 233, 233);
+}
+
+.pollquestion{
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.votecount{
+    padding: 0px 20px;
+}
+
+.resultbtn{
+    color: white;
+    transition: all 0.3s ease 0s;
+    padding: 3px 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(0, 136, 169, 1);
+}
+
+.resultbtn:hover{
+    background-color: rgb(2, 113, 141);
+}
+
+

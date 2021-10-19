@@ -1,0 +1,27 @@
+{%extends 'index.html'%}
+{%load static%}
+
+{%block title%}
+Results
+{%endblock%}
+
+{%block link%}
+<link rel="stylesheet" href="{% static 'resultstyle.css' %}">
+{%endblock%}
+
+{%block content%}
+<main>
+    <h2 class="resultheader">POLL RESULTS!!!</h2>
+    {% for poll in polls %}
+    <div class="pollresults">
+    
+        <p class="pollquestion">{{ poll.pollquestion}}</p>
+
+        <p class="votecount">{{poll.total}}</p>
+
+        <a href="{% url 'detailedresult' poll.id %}"><button class="resultbtn">view result</button></a>
+    </div>
+    {% endfor %}
+    
+</main>
+{%endblock%}

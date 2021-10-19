@@ -1,0 +1,27 @@
+{%extends 'index.html'%}
+{%load static%}
+{% load widget_tweaks%}
+{%block title%}
+CreatePoll
+{%endblock%}
+
+{%block link%}
+<link rel="stylesheet" href="{%static 'createstyle.css'%}">
+{%endblock%}
+
+{%block content%}
+<main>
+    
+    <form method="POST" class="pollform">{% csrf_token %}
+        <label for="pollquestion"> Question </label>
+        {% render_field form.pollquestion class='pollquestion' %}
+        <label for="option1">Option1</label>
+        {% render_field form.option1 placeholder="option 1" %}
+        <label for="option1">Option2</label>
+        {% render_field form.option2 placeholder="option 2" %}
+        <label for="option1">Option3</label>
+        {% render_field form.option3 placeholder="option 3" %}
+        <button type="submit" class="submitbtn">create</button>
+    </form>
+</main>
+{%endblock%}

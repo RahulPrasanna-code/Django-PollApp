@@ -1,0 +1,56 @@
+main{
+    display: flex;
+    color: black;
+    padding: 10px 20px;
+}
+
+.voteplace{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(233, 233, 233);
+
+}
+
+.votingform{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.voteheader{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: auto;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.votingform{
+    padding: 10px 20px;
+}
+
+.pollquestion{
+    font-size: 25px;
+    padding: 10px 0px;
+}
+.votingform label{
+    padding: 10px 10px;
+}
+.submitbtn{
+    color: white;
+    transition: all 0.3s ease 0s;
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius:25px ;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(0, 136, 169, 1);
+}
+
+.submitbtn:hover{
+    background-color: rgb(2, 113, 141);
+}

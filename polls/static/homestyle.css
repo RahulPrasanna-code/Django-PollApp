@@ -1,0 +1,55 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+.pollview{
+    border-bottom: none;
+    width: 50%;
+
+}
+.pollheader{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+}
+.pollcontents{
+    padding: 10px 50px;
+    border-bottom: 1px solid black;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center; 
+    background-color: rgb(233, 233, 233);  
+}
+.pollquestion{
+    margin-right: auto;
+    padding: 0px 15px;
+}
+.pollcontents a{
+    padding: 0px 5px;
+}
+.votebtn{
+    transition: all 0.3s ease 0s;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius:20px ;
+}
+.votebtn:hover{
+    background-color: rgb(0, 0, 0,0.8);
+    
+}
+.resultbtn{
+    transition: all 0.3s ease 0s;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 20px;
+    background-color: rgb(0, 136, 169, 1);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius:20px ;
+}
+.resultbtn:hover{
+    background-color: rgb(2, 113, 141);
+}

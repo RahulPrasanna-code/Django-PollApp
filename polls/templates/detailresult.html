@@ -1,0 +1,33 @@
+{% extends 'index.html'%}
+{%load static%}
+
+{%block title%}
+Results
+{%endblock%}
+
+{%block link%}
+<link rel="stylesheet" href="{% static 'detailresultstyle.css'%}">
+{%endblock%}
+
+{%block content%}
+<main>
+    <div class="results">
+        <h2 class="resultheader">Result</h2>
+        <p class="pollquestion">{{poll.pollquestion}}</p>
+        <div class="finalresult">
+            <label for="option1">{{poll.option1}}</label> 
+            <p class="votecount">{{poll.option1_count}}</p>
+        </div>
+        <div class="finalresult">
+            <label for="option2">{{poll.option2}}</label> 
+            <p class="votecount">{{poll.option2_count}}</p>
+        </div>
+        <div class="finalresult">
+            <label for="option3">{{poll.option3}}</label> 
+            <p class="votecount">{{poll.option3_count}}</p>
+        </div>
+        <div class="resultfooter">
+            <h2 class="totalresult"> Total</h2>
+            <p class="totalcount">{{poll.total}}</p>
+        </div>
+{%endblock%}

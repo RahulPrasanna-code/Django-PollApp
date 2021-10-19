@@ -1,0 +1,37 @@
+{% extends 'index.html'%}
+{%load static%}
+
+
+{%block title%}
+Vote
+{%endblock%}
+
+{%block link%}
+<link rel="stylesheet" href="{% static 'votestyle.css'%}">
+{%endblock%}
+
+{%block content%}
+<main>
+    <div class="voteplace">
+    <h2 class="voteheader">Vote</h2>
+    <form class="votingform" method="POST">{%csrf_token%}
+        <p class="pollquestion">{{poll.pollquestion}}</p>
+        <div class="optionsplace">
+            <input type="radio" name="poll" value="option1">
+            <label for="option1">{{poll.option1}}</label>
+        </div>
+        <div class="optionsplace">
+            <input type="radio" name="poll" value="option2">
+            <label for="option2">{{poll.option2}}</label>
+        </div>
+        <div class="optionsplace">
+            <input type="radio" name="poll" value="option3">
+            <label for="option3">{{poll.option3}}</label><br>
+        </div>
+        <button type="submit" class="submitbtn">submit</button>
+        
+    </form>
+    </div>
+    
+</main>
+{%endblock%}

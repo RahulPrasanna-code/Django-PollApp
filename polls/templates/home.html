@@ -1,0 +1,28 @@
+{%extends 'index.html'%}
+{%load static%}
+{%block title%}
+Home
+{%endblock%}
+
+{%block link%}
+<link rel="stylesheet" type="text/css" href="{% static 'homestyle.css'%}">
+{%endblock%}
+{% block content %}
+<main>
+	<div class="pollview">
+	<h2 class="pollheader">MAKE YOUR VOTE!!!</h2>
+	{% for poll in polls %}
+	<div class="pollcontents">
+		<p class="pollquestion">{{poll.pollquestion}}</p>
+		<a href="{%url 'vote' poll.id %}"><button class="votebtn"> vote </button></a>
+		<a href="{%url 'detailedresult' poll.id %}"><button class="resultbtn"> results </button></a>
+	</div>
+	{% endfor %}
+	</div>
+</main>
+{% endblock %}
+
+
+</body>
+</html>
+

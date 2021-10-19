@@ -1,0 +1,45 @@
+main{
+    display: flex;
+    color: black;
+}
+
+.results{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 233, 233);
+}
+
+.resultheader{
+    padding: 10px 25px;
+    border-bottom: 1px solid black;
+}
+
+.pollquestion{
+    font-size: 25px;
+    padding: 8px 25px;
+}
+
+.finalresult{
+    padding: 8px 25px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.votecount{
+    margin-left: auto;
+}
+
+.resultfooter{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 25px;
+}
+
+.totalcount{
+    margin-left: auto;
+}

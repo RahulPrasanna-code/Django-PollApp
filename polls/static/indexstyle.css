@@ -1,0 +1,63 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #24252a;
+}
+
+.navlinks li,.navlinks li a, .contact {
+	font-family: arial;
+	font-weight: 500;
+	font-size: 16px;
+	color: #edf0f1;
+	text-decoration: none;
+}
+
+header{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	padding: 30px 10%;
+	height: 70px;
+}
+
+.logo
+{
+	cursor: pointer;
+	color: white;
+}
+
+.navlinks
+{
+	list-style: none;
+}
+
+.navlinks li{
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.navlinks li a{
+	transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+	color: #0088a9;
+}
+
+header a button{
+	padding: 9px 25px;
+	background-color: rgb(0, 136, 169, 1);
+	border: none;
+	border-radius:50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+header a button:hover{
+	background-color: rgb(0, 136, 169,0.8);
+}
