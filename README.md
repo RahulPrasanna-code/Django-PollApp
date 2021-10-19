@@ -10,6 +10,6 @@ Here is some command to install django
 1.  pip install django
 
 2.  python manage.py runserver
-# it will generate an local host link at http://127.0.0.1:8000/ redirect yourself to http://127.0.0.1:8000/home/ and you will be able to see the homepage.
+// it will generate an local host link at http://127.0.0.1:8000/ redirect yourself to http://127.0.0.1:8000/home/ and you will be able to see the homepage.
  
 Thank you
