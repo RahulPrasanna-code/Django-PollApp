@@ -16,6 +16,11 @@ Home
 		<p class="pollquestion">{{poll.pollquestion}}</p>
 		<a href="{%url 'vote' poll.id %}"><button class="votebtn"> vote </button></a>
 		<a href="{%url 'detailedresult' poll.id %}"><button class="resultbtn"> results </button></a>
+		<form method='POST'>{%csrf_token%}
+			<input type="hidden" value={{poll.id}} name="deletebtn">
+			<button class="deletebtn" type="submit"> delete </button></a>
+		</form>
+		
 	</div>
 	{% endfor %}
 	</div>

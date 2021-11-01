@@ -8,6 +8,10 @@ def index(request):
 	context={
 		'polls':polls
 		}
+	if request.method=="POST":
+		primarykey=request.POST['deletebtn']
+		deletepollobj=Poll.objects.get(pk=primarykey)
+		deletepollobj.delete()
 	return render(request,"home.html",context)
 
 def create(request):
